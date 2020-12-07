@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>collapse折叠面板</h2>
+        <div class="collapse">
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>collapse折叠面板</h2>
+        <div class="collapse">
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">虎牙直播</div>
+                <div class="item-content">
+                    虎牙直播是一个互动直播平台，为用户提供高清、流畅而丰富的互动式视频直播服务， [1] 旗下产品包括知名游戏直播平台虎牙直播、风靡东南亚和南美的游戏直播平台NimoTV [2-3] 等， 产品覆盖PC、Web、移动三端 [4]
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const $ = s => document.querySelector(s)
+    const $$ = s => document.querySelectorAll(s)
+    class Collapse {
+        constructor($container, type = 1) {
+            this.$container = $container
+            this.$$items = $container.querySelectorAll('.item')
+            this.type = type
+            this.bind()
+        }
+        bind() {
+            let self = this
+            this.$$items.forEach($item => {
+                $item.onclick = function() {
+                    if (self.type === 2) this.classList.toggle('active')
+                    else if (self.type === 1) {
+                        self.$$items.forEach($item => $item.classList.remove('active'))
+                        this.classList.add('active')
+                    }
+
+                }
+            });
+        }
+    }
+    new Collapse($$('.collapse')[0])
+    new Collapse($$('.collapse')[1], 2)
+</script>
+
+</html>
